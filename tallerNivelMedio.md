@@ -150,6 +150,14 @@ negatives.count
     ## [183]    0    0    0    0    0    0    0    0    0    0    0    0    0    0
     ## [197]    0    0    0    0
 
+#### Ejercicio 3:
+
+**El ejemplo que hemos hecho con lapply y sapply no es muy reutilizable, ya que estamos asumiendo que existe una variable que se llama *dataset* y que contiene un dataset. Â¿CÃ³mo podemos arreglarlo?** **Pista: las funciones pueden recibir mÃ¡s de un sÃ³lo parÃ¡metro.**
+
+#### Ejercicio 4:
+
+**Usa programaciÃ³n funcional para sustituir por *NAs* todos los nÃºmeros negativos del dataset. Puedes usar *length(which(is.na(dataset\[\[i\]\])))* para comprobar si lo has hecho bien, comprobando que el nÃºmero de NAs de cada columna coincide con el nÃºmero de negativos que obtuvimos anteriormente para cada columna.**
+
 ### Filtrado elegante con Dplyr
 
 *Dplyr* es un paquete creado para la manipulaciÃ³n de datos, proporciona un conjunto de funciones para ayudar a resolver los problemas de manipulaciÃ³n de datos mÃ¡s comunes, entre ellos:
@@ -223,14 +231,6 @@ Orange %>%
     dplyr::filter(age < 500) %>%
     dplyr::arrange(age, circumference)
 ```
-
-#### Ejercicio 3:
-
-**El ejemplo que hemos hecho con lapply y sapply no es muy reutilizable, ya que estamos asumiendo que existe una variable que se llama *dataset* y que contiene un dataset. Â¿CÃ³mo podemos arreglarlo?** **Pista: las funciones pueden recibir mÃ¡s de un sÃ³lo parÃ¡metro.**
-
-#### Ejercicio 4:
-
-**Usa programaciÃ³n funcional para sustituir por *NAs* todos los nÃºmeros negativos del dataset. Puedes usar *length(which(is.na(dataset\[\[i\]\])))* para comprobar si lo has hecho bien, comprobando que el nÃºmero de NAs de cada columna coincide con el nÃºmero de negativos que obtuvimos anteriormente para cada columna.**
 
 Por si quieres saber mÃ¡s: paralelizando en R
 --------------------------------------------
